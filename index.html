@@ -6,10 +6,16 @@
 <body>
   <h1>Welcome to My Portfolio</h1>
 
-  <p>This is where I showcase my work.  More details coming soon!</p>
+  <p>This is where I showcase my work. More details coming soon!</p>
 
-  <p>Contact me:
-    vishnupriya.mohan@straive.com</p>
+  <p>Contact me: <span id="email"></span></p>
+
+  <script>
+    const user = "vishnupriya";
+    const domain = "straive.com";
+    const email = user + "@" + domain;
+    document.getElementById("email").innerHTML = '<a href="mailto:' + email + '">' + email + '</a>';
+  </script>
 
 </body>
 </html>
